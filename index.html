@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    html{
+        background-color: black;
+    }
+</style>
+<body>
+    <section class="flex justify-center items-center h-screen">
+        <div class=" p-4 rounded-2xl items-center max-w-md w-full">
+            <img id="img" src="Images/off.png" class="mx-auto" alt="Switch Image">
+            <div class="flex justify-center space-x-10">
+                <button onclick="switchOn()" class="p-4 bg-white text-cyan-600 font-semibold text-3xl rounded-xl hover:bg-white/40">On</button>
+                <button onclick="switchOff()" class="p-4 bg-white text-cyan-600 font-semibold text-3xl rounded-xl hover:bg-white/40">Off</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
